@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ShowFieldSdk.iml" filepath="$PROJECT_DIR$/ShowFieldSdk.iml" group="ShowFieldSdk" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ShowFieldSdk/app" />
       <module fileurl="file://$PROJECT_DIR$/lib-showField/lib-showField.iml" filepath="$PROJECT_DIR$/lib-showField/lib-showField.iml" group="ShowFieldSdk/lib-showField" />
     </modules>
   </component>

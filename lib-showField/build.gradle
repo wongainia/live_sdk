@@ -3,40 +3,8 @@ apply plugin: 'com.xuexiang.xaop'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.HelloWangZhiYong'
+group = 'com.github.HelloWangZhiYong'
 
-//apply plugin: 'maven'
-//ext {
-//    GITHUB_REPO_PATH = "/Users/wangzhiyong/Desktop"
-//    PUBLISH_GROUP_ID = 'zhousf.lib'
-//    PUBLISH_ARTIFACT_ID = 'aar'
-//    PUBLISH_VERSION = '1.0.1'
-//}
-//
-//uploadArchives {
-//    repositories {
-//        mavenDeployer {
-//            //本地maven仓库地址,也可以使用远程maven仓库
-//            def deployPath = file(project.GITHUB_REPO_PATH)
-//            repository(url: "file://${deployPath.absolutePath}")
-//            pom.project {
-//                groupId project.PUBLISH_GROUP_ID
-//                artifactId project.PUBLISH_ARTIFACT_ID
-//                version project.PUBLISH_VERSION
-//            }
-//        }
-//    }
-//}
-//
-//// 源代码一起打包
-//task androidSourcesJar(type: Jar) {
-//    classifier = 'sources'
-//    from android.sourceSets.main.java.sourceFiles
-//}
-//
-//artifacts {
-//    archives androidSourcesJar
-//}
 android {
     compileSdkVersion 29
     buildToolsVersion "30.0.2"
