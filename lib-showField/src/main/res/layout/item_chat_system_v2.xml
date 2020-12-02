@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_system"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_2"
+    android:paddingBottom="@dimen/dp_2">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_8"
+        android:text="禁止发布任何色情、暴力、低俗、赌博等不良信息。禁止在直播间发布手机号码、QQ、微信等联系方式，否则将会被永久封禁，情节严重者将上报公安机关。提倡绿色直播，净化网络环境"
+        android:textColor="#F0CF2C" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

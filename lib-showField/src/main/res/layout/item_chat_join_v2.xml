@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bg_join_nick"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_2"
+    android:paddingBottom="@dimen/dp_2">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dp_12"
+        android:text="欢迎"
+        android:textSize="13sp"
+        android:textColor="@color/item_news_text" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_item_chat_join_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dp_5"
+        android:textSize="13sp"
+        android:text="Louis Santos"
+        android:textColor="@color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_12"
+        android:textSize="13sp"
+        android:text="进入直播间"
+        android:textColor="@color/item_news_text" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

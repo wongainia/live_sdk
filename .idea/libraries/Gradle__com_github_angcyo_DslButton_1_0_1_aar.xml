@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.angcyo:DslButton:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84965aa5b4e59c618a999bd29f9f3bf3/jetified-DslButton-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84965aa5b4e59c618a999bd29f9f3bf3/jetified-DslButton-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.angcyo/DslButton/1.0.1/51c764ff0435aceb43a52e3440af05881a36f72e/DslButton-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|start"
+        android:layout_margin="24dp"
+        android:background="@drawable/dkplayer_shape_back_bg"
+        android:padding="@dimen/dkplayer_default_spacing"
+        android:src="@drawable/dkplayer_selector_lock_button"
+        android:visibility="gone" />
+
+    <com.lib.showfield.ui.view.clearScreen.ClearScreenLayout
+        android:id="@+id/clear_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_clear_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rl_show_field_player"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_show_field_player_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_shape_live_anchor">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/item_iv_show_field_avatar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_show_field_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_toEndOf="@+id/item_iv_show_field_avatar"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/item_iv_show_field_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxEms="9"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="7dp"
+                                android:layout_height="9dp"
+                                android:src="@drawable/icon_hot" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/item_iv_show_field_hotnum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:text="2.2"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+<!--                    <androidx.appcompat.widget.AppCompatTextView-->
+<!--                        android:id="@+id/item_tv_show_field_focus"-->
+<!--                        android:layout_width="36dp"-->
+<!--                        android:layout_height="26dp"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginEnd="3dp"-->
+<!--                        android:layout_toEndOf="@+id/ll_show_field_info"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="13sp"-->
+<!--                        android:visibility="gone" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true">
+
+                    <com.lib.showfield.ui.view.HorizontalRecyclerViewV2
+                        android:id="@+id/hrv_user_live"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/item_iv_show_field_livenum" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/item_iv_show_field_livenum"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/bg_live_number_shape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_contribute_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_show_field_player"
+                android:layout_marginStart="10dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_show_field_contribute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_shape_live_anchor"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="贡献榜"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="4.5dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/icon_enter" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_full_show_field"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:src="@drawable/icon_full_showfield"
+                android:visibility="gone" />
+
+            <com.lib.showfield.ui.view.widget.RewardLayout
+                android:id="@+id/rl_layout_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/srl_show_field_chat"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                app:gift_item_layout="@layout/item_gift_animation"
+                app:max_gift="2" />
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/srl_show_field_chat"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="95dp"
+                android:layout_marginBottom="80dp"
+                app:srlEnableLoadMore="false"
+                app:srlEnableOverScrollBounce="true"
+                app:srlEnableOverScrollDrag="true"
+                app:srlEnableRefresh="false">
+
+                <com.lib.showfield.ui.view.tiktalk.ChildRecyclerView
+                    android:id="@+id/rv_show_field_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp" />
+
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp">
+
+                <com.lib.showfield.ui.view.widget.RegexEditText
+                    android:id="@+id/edt_close_comment"
+                    style="@style/ShowFieldEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_toStartOf="@+id/ll_detail"
+                    android:focusable="false"
+                    android:gravity="center|start"
+                    android:hint="退下让我说"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/item_iv_show_field_more"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/icon_show_field_more" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/item_iv_show_field_red"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/icon_show_field_red"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/item_iv_show_field_gift"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/icon_show_field_gift" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/iv_svg_choose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="80dp"
+                fresco:autoPlay="false"
+                fresco:clearsAfterStop="true"
+                fresco:loopCount="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_svg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/shape_gift_anim_bg"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_ad"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="250dp"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cl_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <com.zhpan.bannerview.BannerViewPager
+                        android:id="@+id/banner_view"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/shape_white_radius" />
+
+                    <com.zhpan.indicator.DrawableIndicator
+                        android:id="@+id/indicator_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_8" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ll_show_field_close"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icon_sc_close" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="77dp"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房间号："
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_iv_show_field_live_roomNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:id="@+id/rl_open_chat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <com.lib.showfield.ui.view.widget.RegexEditText
+                android:id="@+id/edt_open_comment"
+                style="@style/ShowFieldOpenEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:hint="退下让我说~"
+                android:imeOptions="actionSend"
+                android:maxLength="30"
+                android:paddingStart="13dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+    </com.lib.showfield.ui.view.clearScreen.ClearScreenLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_live_no_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_no_pull_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_live_nopull" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="主播不在家，去看看其他直播吧"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <com.lib.showfield.ui.view.widget.RewardLayout
+                android:id="@+id/rl_layout_gift_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                app:gift_item_layout="@layout/item_gift_animation"
+                app:max_gift="2" />
+
+            <LinearLayout
+                android:id="@+id/ll_gift_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/rl_layout_gift_full"
+                android:background="#CC000000"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="礼物"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#22FFFFFF" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_full_gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_full_money_icon"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_full_coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="100"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/ll_full_up_coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_up_coins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="充值"
+                                android:textColor="#F0CF2C"
+                                android:textSize="14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text=">"
+                                android:textColor="#F0CF2C"
+                                android:textSize="10sp" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_full_send_gift"
+                        android:layout_width="74dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/shape_send_gift_full_bg"
+                        android:gravity="center"
+                        android:text="赠送"
+                        android:textColor="#1a1a1c"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_full_no_send_gift"
+                        android:layout_width="74dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/shape_grey_conner15"
+                        android:gravity="center"
+                        android:text="余额不足"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/lottie_double_click"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="85dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_marquee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/shape_gift_anim_bg_maquee"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|end">
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/iv_svg_anim"
+            android:layout_width="400dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_svg_text_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/shape_gift_anim_bg"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.lib.showfield.ui.view.widget.RegexEditText
+        android:id="@+id/edt_show_field_full"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="bottom"
+        android:imeOptions="flagNoExtractUi|actionSend"
+        android:visibility="gone" />
+
+</FrameLayout>

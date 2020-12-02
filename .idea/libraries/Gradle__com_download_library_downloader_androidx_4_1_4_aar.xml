@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.download.library:downloader-androidx:4.1.4@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2282cb8f8543677440134e2673277312/jetified-downloader-androidx-4.1.4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2282cb8f8543677440134e2673277312/jetified-downloader-androidx-4.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2282cb8f8543677440134e2673277312/jetified-downloader-androidx-4.1.4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.download.library/downloader-androidx/4.1.4/31666a5c144cf32df9e6eca34c8b5b201037b352/downloader-androidx-4.1.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.download.library/downloader-androidx/4.1.4/68d1f5f5895241c197793faa1b8f5fef218f5058/downloader-androidx-4.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

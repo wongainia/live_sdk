@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="windowBackground">#F4F4F4</color>
+    <color name="textColor">#333333</color>
+    <color name="textColorHint">#757575</color>
+
+    <!-- 按钮按压时的颜色 -->
+    <color name="colorButtonPressed">#1976D2</color>
+    <!-- 按钮禁用时的颜色 -->
+    <color name="colorButtonDisable">#BBBBBB</color>
+    <!-- 分割线的颜色 -->
+    <color name="colorLine">#4a4a4a</color>
+
+    <color name="colorAccent">#4A90E2</color>
+
+    <color name="card_line">#373941</color>
+    <color name="light_gray">#9b9b9b</color>
+    <color name="unable_click">#6b6c71</color>
+    <color name="item_news_text">#9b9b9b</color>
+    <color name="toast_bg">#323336</color>
+    <color name="dark_line">#25292e</color>
+    <color name="text_gray">#c0c0c0</color>
+    <color name="live_tab_on">#63676b</color>
+    <color name="maincolor">#29292d</color>
+    <color name="maincolorDark">#1a1a1c</color>
+    <color name="black15">#151515</color>
+
+    <!--贡献榜-->
+    <color name="color_contribute_bottom_bg_color">#cc3a3a3a</color>
+    <color name="color_contribute_tab_indicator_start_color">#FBAD49</color>
+    <color name="color_contribute_tab_indicator_end_color">#EFD02B</color>
+    <color name="color_match_item_race_shape">#25292E</color>
+
+    <!-- 对话框确认按钮文本颜色 -->
+    <color name="colorConfirm">#4A90E2</color>
+    <color name="maincolorDarkAccent">#4A90E2</color>
+    <!-- 对话框取消按钮文本颜色 -->
+    <color name="colorCancel">#F44336</color>
+
+    <color name="item_full_gift">#cc000000</color>
+    <color name="item_quality_text_checked">#F0CF2C</color>
+    <color name="chat_join_text">#F0CF2C</color>
+
+    <color name="dkplayer_theme_color">#4A90E2</color>
+    <color name="dkplayer_theme_color_translucent">#4A90E2</color>
+    <color name="dkplayer_background_color">#4D000000</color>
+
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+
+    <!-- 白色 -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="white9">#FFF9F9F9</color>
+    <color name="white90">#E6FFFFFF</color>
+    <color name="white85">#D9FFFFFF</color>
+    <color name="menu_bg">#323336</color>
+
+    <!-- 黑色 -->
+    <color name="black">#FF000000</color>
+    <color name="black85">#D9000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="black5">#0D000000</color>
+</resources>

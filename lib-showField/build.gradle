@@ -1,0 +1,199 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.xuexiang.xaop'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.HelloWangZhiYong'
+
+//apply plugin: 'maven'
+//ext {
+//    GITHUB_REPO_PATH = "/Users/wangzhiyong/Desktop"
+//    PUBLISH_GROUP_ID = 'zhousf.lib'
+//    PUBLISH_ARTIFACT_ID = 'aar'
+//    PUBLISH_VERSION = '1.0.1'
+//}
+//
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            //本地maven仓库地址,也可以使用远程maven仓库
+//            def deployPath = file(project.GITHUB_REPO_PATH)
+//            repository(url: "file://${deployPath.absolutePath}")
+//            pom.project {
+//                groupId project.PUBLISH_GROUP_ID
+//                artifactId project.PUBLISH_ARTIFACT_ID
+//                version project.PUBLISH_VERSION
+//            }
+//        }
+//    }
+//}
+//
+//// 源代码一起打包
+//task androidSourcesJar(type: Jar) {
+//    classifier = 'sources'
+//    from android.sourceSets.main.java.sourceFiles
+//}
+//
+//artifacts {
+//    archives androidSourcesJar
+//}
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles "consumer-rules.pro"
+
+        // 仅保留两种架构的 so 库，根据 Bugly 统计得出
+        ndk {
+            // armeabi：万金油架构平台（占用率：0%）
+            // armeabi-v7a：曾经主流的架构平台（占用率：10%）
+            // arm64-v8a：目前主流架构平台（占用率：90%）
+            abiFilters "armeabi-v7a", "arm64-v8a", 'armeabi', "x86"
+        }
+
+        //使用renderscript 兼容包
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+//    buildFeatures {
+//        dataBinding true
+//    }
+    dataBinding{
+        enabled =true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+
+    api 'com.google.android.material:material:1.3.0-alpha02'
+
+    //自动适配依赖
+    api 'me.jessyan:autosize:1.1.2'
+
+    //banner https://github.com/zhpanvip/BannerViewPager
+    api 'com.github.zhpanvip:BannerViewPager:3.1.0'
+
+    api "com.google.android.exoplayer:exoplayer-core:2.11.3"
+    api "com.google.android.exoplayer:exoplayer-dash:2.11.3"
+    api "com.google.android.exoplayer:exoplayer-hls:2.11.3"
+    api "com.google.android.exoplayer:exoplayer-smoothstreaming:2.11.3"
+    api "com.google.android.exoplayer:extension-rtmp:2.11.3"
+
+    api "tv.danmaku.ijk.media:ijkplayer-java:0.8.8"
+
+    // Lifecycles, LiveData and ViewModel
+    api "androidx.lifecycle:lifecycle-runtime:2.2.0"
+    api "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    api "androidx.lifecycle:lifecycle-common-java8:2.2.0"
+    api "androidx.lifecycle:lifecycle-viewmodel:2.2.0"
+
+    // 吐司框架：https://github.com/getActivity/ToastUtils
+    api 'com.hjq:toast:8.0'
+
+    // 状态栏沉浸：https://github.com/gyf-dev/ImmersionBar
+    api 'com.gyf.immersionbar:immersionbar:3.0.0'
+
+    // 权限请求框架：https://github.com/getActivity/XXPermissions
+    api 'com.hjq:xxpermissions:6.2'
+
+    // AOP 插件库：https://mvnrepository.com/artifact/org.aspectj/aspectjrt
+    api 'org.aspectj:aspectjrt:1.9.5'
+
+    api 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+    api 'com.github.ctiao:ndkbitmap-armv7a:0.9.21'
+    api 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0'
+    api 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+
+    //自定义spinner下拉框 https://github.com/skydoves/powerspinner
+    api "com.github.skydoves:powerspinner:1.0.7"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72"
+
+    //SVGA动画库
+    api 'com.github.yyued:SVGAPlayer-Android:2.5.3'
+
+    //Use ViewPagers in Bottom Sheets!
+    api "biz.laenger.android:vpbs:0.0.6"
+
+    //单选、多选tag
+    api 'com.github.djzhao627:FlowLayout:1.0.1'
+
+    // retrofit2
+    api 'com.squareup.retrofit2:retrofit:2.5.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    // RxJava2
+    api 'io.reactivex.rxjava2:rxjava:2.2.8'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    // retrofit-adapter
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+
+    // OkHttp 框架：https://github.com/square/okhttp
+    api 'com.squareup.okhttp3:okhttp:3.14.1'
+
+    // JSON 解析框架：https://github.com/google/gson
+    api 'com.google.code.gson:gson:2.8.6'
+
+    //glide图片加载框架
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // 动画资源：https://lottiefiles.com/
+    api 'com.airbnb.android:lottie:3.2.0'
+
+    //BRVAH RecyclerAdapter框架库 https://www.jianshu.com/p/b343fcff51b0
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    //工具类
+    api 'com.blankj:utilcodex:1.27.1'
+
+    // 上拉刷新下拉加载：https://github.com/scwang90/SmartRefreshLayout
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+
+    //自定义popWindow
+    api 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
+
+    //顶部导航栏: https://github.com/angcyo/DslTabLayout
+    api 'com.github.angcyo.DslTablayout:TabLayout:1.5.2'
+    api 'com.github.angcyo.DslTablayout:ViewPager1Delegate:1.4.2'
+    api 'com.github.angcyo:DslButton:1.0.1'
+
+    //高斯模糊
+    api 'com.github.pinguo-zhouwei:EasyBlur:v1.0.0'
+
+    //web
+    api 'com.just.agentweb:agentweb-androidx:4.1.4' // (必选)
+    api 'com.just.agentweb:filechooser-androidx:4.1.4'// (可选)
+    api 'com.download.library:downloader-androidx:4.1.4'// (可选)
+
+    //投屏
+    api(name: 'source-sdk', ext: 'aar')
+}

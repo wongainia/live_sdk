@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom_container_full"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dkplayer_controller_height"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/dkplayer_mask_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/dkplayer_selector_play_button" />
+
+        <ImageView
+            android:id="@+id/iv_barrage"
+            android:layout_width="25dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/dkplayer_selector_barrage_button" />
+
+        <FrameLayout
+            android:id="@+id/ll_full_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/tv_edit_start"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_edit_bg"
+                android:gravity="center_vertical"
+                android:hint="我来说两句"
+                android:imeOptions="actionSend|flagNoExtractUi"
+                android:paddingStart="20dp"
+                android:singleLine="true"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_full_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/icon_gift" />
+    </LinearLayout>
+</FrameLayout>

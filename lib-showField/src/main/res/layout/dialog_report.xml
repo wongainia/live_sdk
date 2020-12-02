@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_dialog_report_bg_v2">
+
+    <com.skydoves.powerspinner.PowerSpinnerView
+        android:id="@+id/spinner_report"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:hint="选择举报原因"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:spinner_arrow_gravity="end"
+        app:spinner_arrow_padding="8dp"
+        app:spinner_divider_color="@color/card_line"
+        app:spinner_divider_show="true"
+        app:spinner_divider_size="1dp"
+        app:spinner_popup_animation="normal"
+        app:spinner_popup_elevation="14dp" />
+
+    <com.lib.showfield.ui.view.widget.RegexEditText
+        android:id="@+id/edt_report_content"
+        style="@style/CommentOpenEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:layout_below="@+id/spinner_report"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:gravity="start"
+        android:hint="详细描述举报内容"
+        app:regexType="nonnull" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_report_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_button_secret_normal"
+            android:textColor="@color/white"
+            android:layout_marginEnd="@dimen/dp_6"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="取消" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_report_conform"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_6"
+            android:layout_weight="1"
+            android:text="举报" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

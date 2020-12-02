@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="c">
+
+        <item>@drawable/icon_click_anim0</item>
+        <item>@drawable/icon_click_anim1</item>
+        <item>@drawable/icon_click_anim2</item>
+        <item>@drawable/icon_click_anim3</item>
+        <item>@drawable/icon_click_anim4</item>
+        <item>@drawable/icon_click_anim5</item>
+        <item>@drawable/icon_click_anim6</item>
+        <item>@drawable/icon_click_anim7</item>
+        <item>@drawable/icon_click_anim8</item>
+        <item>@drawable/icon_click_anim9</item>
+        <item>@drawable/icon_click_anim10</item>
+        <item>@drawable/icon_click_anim11</item>
+        <item>@drawable/icon_click_anim12</item>
+        <item>@drawable/icon_click_anim13</item>
+        <item>@drawable/icon_click_anim14</item>
+        <item>@drawable/icon_click_anim15</item>
+        <item>@drawable/icon_click_anim16</item>
+        <item>@drawable/icon_click_anim17</item>
+        <item>@drawable/icon_click_anim18</item>
+        <item>@drawable/icon_click_anim19</item>
+        <item>@drawable/icon_click_anim20</item>
+        <item>@drawable/icon_click_anim21</item>
+        <item>@drawable/icon_click_anim22</item>
+        <item>@drawable/icon_click_anim23</item>
+        <item>@drawable/icon_click_anim24</item>
+        <item>@drawable/icon_click_anim25</item>
+        <item>@drawable/icon_click_anim26</item>
+        <item>@drawable/icon_click_anim27</item>
+        <item>@drawable/icon_click_anim28</item>
+        <item>@drawable/icon_click_anim29</item>
+        <item>@drawable/icon_click_anim30</item>
+        <item>@drawable/icon_click_anim31</item>
+        <item>@drawable/icon_click_anim32</item>
+        <item>@drawable/icon_click_anim33</item>
+        <item>@drawable/icon_click_anim34</item>
+        <item>@drawable/icon_click_anim35</item>
+        <item>@drawable/icon_click_anim36</item>
+        <item>@drawable/icon_click_anim37</item>
+        <item>@drawable/icon_click_anim38</item>
+        <item>@drawable/icon_click_anim39</item>
+        <item>@drawable/icon_click_anim40</item>
+        <item>@drawable/icon_click_anim41</item>
+        <item>@drawable/icon_click_anim42</item>
+        <item>@drawable/icon_click_anim43</item>
+        <item>@drawable/icon_click_anim44</item>
+        <item>@drawable/icon_click_anim45</item>
+        <item>@drawable/icon_click_anim46</item>
+        <item>@drawable/icon_click_anim47</item>
+        <item>@drawable/icon_click_anim48</item>
+        <item>@drawable/icon_click_anim49</item>
+        <item>@drawable/icon_click_anim50</item>
+        <item>@drawable/icon_click_anim51</item>
+        <item>@drawable/icon_click_anim52</item>
+        <item>@drawable/icon_click_anim53</item>
+        <item>@drawable/icon_click_anim54</item>
+        <item>@drawable/icon_click_anim55</item>
+        <item>@drawable/icon_click_anim56</item>
+        <item>@drawable/icon_click_anim57</item>
+        <item>@drawable/icon_click_anim58</item>
+        <item>@drawable/icon_click_anim59</item>
+        <item>@drawable/icon_click_anim60</item>
+
+    </array>
+
+</resources>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.angcyo.DslTablayout:ViewPager1Delegate:1.4.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38b825688c1315147372593dcca7f33e/jetified-ViewPager1Delegate-1.4.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38b825688c1315147372593dcca7f33e/jetified-ViewPager1Delegate-1.4.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.angcyo.DslTablayout/ViewPager1Delegate/1.4.2/272bb0883d3f9bcb997b3b9fd03eefb4b8c8c6c9/ViewPager1Delegate-1.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

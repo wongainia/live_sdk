@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginRight="3.5dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="@dimen/dp_6"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_home_recommend_bg"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/dkplayer_mask_bottom">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/shape_avatar_circle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_home_recommend_avatar"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerInParent="true" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_home_recommend_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:maxEms="6"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_5"
+                    android:layout_marginBottom="4dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="9dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/icon_hot" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_home_recommend_hot_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:maxEms="4"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_6"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_home_recommend_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:maxEms="12"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_home_recommend_league"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:maxEms="12"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

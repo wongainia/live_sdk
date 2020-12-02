@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.zhpanvip:viewpagerindicator:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4337331b587fcd69bcbac69e81697fd4/jetified-viewpagerindicator-1.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4337331b587fcd69bcbac69e81697fd4/jetified-viewpagerindicator-1.0.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zhpanvip/viewpagerindicator/1.0.3/8ec4dea640d51e95d7c01ee6ad26bc16c0097e5a/viewpagerindicator-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

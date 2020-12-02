@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.skydoves:powerspinner:1.0.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1fb8bf05a7001f36ba818b5fe1670b00/jetified-powerspinner-1.0.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1fb8bf05a7001f36ba818b5fe1670b00/jetified-powerspinner-1.0.7/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.skydoves/powerspinner/1.0.7/b5386803fb33845f4adc85d195fc5d124a4e7984/powerspinner-1.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.skydoves/powerspinner/1.0.7/6aad21ed25e40a2be0656a3c38074a094783c046/powerspinner-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

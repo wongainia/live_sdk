@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="195dp"
+    android:layout_marginStart="@dimen/dp_15"
+    android:layout_marginEnd="@dimen/dp_15"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:background="@color/maincolorDark">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="111dp"
+            android:layout_height="160dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/icon_contribute_no2_bg"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_30">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_contribute_no2_avatar"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:background="@drawable/shape_no2_avatar_circle"
+                    android:padding="@dimen/dp_2"
+                    android:src="@drawable/icon_avatar" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_contribute_no2_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_contribute_no2_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="虚位以待"
+                android:textColor="@color/light_gray"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_contribute_no2_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="贡献值"
+                android:textColor="@color/light_gray"
+                android:textSize="10sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="111dp"
+            android:layout_height="160dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/icon_contribute_no3_bg"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_30">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_contribute_no3_avatar"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:background="@drawable/shape_no3_avatar_circle"
+                    android:padding="@dimen/dp_2"
+                    android:src="@drawable/icon_avatar" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_contribute_no3_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_contribute_no3_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="虚位以待"
+                android:textColor="@color/light_gray"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_contribute_no3_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="贡献值"
+                android:textColor="@color/light_gray"
+                android:textSize="10sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="135dp"
+            android:layout_height="195dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_contribute_no1_bg"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="44dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_contribute_no1_avatar"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:background="@drawable/shape_no1_avatar_circle"
+                    android:padding="@dimen/dp_2"
+                    android:src="@drawable/icon_avatar" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_contribute_no1_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_contribute_no1_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="虚位以待"
+                android:textColor="@color/light_gray"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_contribute_no1_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="贡献值"
+                android:textColor="@color/light_gray"
+                android:textSize="10sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</RelativeLayout>

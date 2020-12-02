@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item_chat_msg_normal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="start">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/img_left"-->
+    <!--        android:layout_width="@dimen/dp_20"-->
+    <!--        android:layout_height="@dimen/dp_20"-->
+    <!--        android:visibility="visible" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tv_item_chat_msg_text_normal"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:textColor="@color/color_match_item_time"-->
+    <!--        android:textSize="13sp" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_normal_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_support_team_icon"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/icon_team_default"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_user_level"
+            android:layout_width="44dp"
+            android:layout_height="18dp"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@id/iv_support_team_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9B9B9B"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_user_level"
+            app:layout_constraintLeft_toRightOf="@id/iv_user_level"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_user_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_user_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
